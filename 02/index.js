@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
     return res.send('Welcom !');
 });
 app.get('/encode/:hello', (req, res) => {
-  const v=  Vigenere.Cipher(password).crypt('abc-0123456789@example.com');
+  const v=  Vigenere.Cipher(password).crypt('Lorem');
     return res.send(v);
 });
-app.get('/decode/:d', (req, res) => {
-  const v=  Vigenere.Decipher(password).crypt('bcd-0123456789@fybnqmf.dpn');
+app.get('/decode/:Mpsfn', (req, res) => {
+  const v=  Vigenere.Decipher(password).crypt('Mpsfn');
     return res.send(v);
 });
 
